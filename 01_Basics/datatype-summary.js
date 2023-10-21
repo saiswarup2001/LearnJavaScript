@@ -18,20 +18,24 @@ console.log(id === anotherId);
 
 
 
-// Reference (Non primitive)
+// Reference (Non primitive) -->  the return type is object only
 
-// Array, Objects, Functions
+// Array, Objects, Functions 
 
 const heros = ["shaktiman", "naagraj", "doga"];
 let myObj = {
     name: "hitesh",
     age: 22,
 }
+console.log(typeof heros);  //object
+
 
 const myFunction = function(){
     console.log("Hello world");
 }
+console.log(typeof myFunction); //object function is the return type of functions
 
-console.log(typeof anotherId);
+
+console.log(typeof anotherId); //symbol
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
