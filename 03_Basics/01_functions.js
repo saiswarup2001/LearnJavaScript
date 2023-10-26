@@ -40,3 +40,38 @@ console.log(userLoginMessage("Sai"));
 
 // const message = userLoginMessage("Sai")
 // console.log(message);
+
+//+++++++++++++++++++++ shopping cards +++++++++++++++++++++++++++++
+
+function calculateCardPrices(...num1){
+    return num1
+}
+
+console.log(calculateCardPrices(200, 400, 500, 200, 1000));
+
+//+++++++++++++++++++++++ functions with objects ++++++++++++++++++++++++++++++++++
+const user = {
+    username: "sai",
+    price: 199
+}
+
+function handelObject(anyObject){
+    console.log(`username is ${anyObject.username} and price is ${anyObject.price}`);
+}
+
+// handelObject(user)
+handelObject({
+    username: "sai",
+    price: 399
+})
+
+//++++++++++++++++++++++++++++++++++ array object in function +++++++++++++++++++++++++++++
+
+const myArr = [100, 200, 300, 400]
+
+function returnSecondValue(getArray){
+    return getArray[2]
+}
+
+// console.log(returnSecondValue(myArr));
+console.log(returnSecondValue([100, 200, 300, 400]));
