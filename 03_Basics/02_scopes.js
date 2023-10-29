@@ -19,3 +19,44 @@ if(true){
 console.log(a);
 // console.log(b);
 // console.log(c);
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Nested Scope
+
+function one(){
+    const userName = "Sai"
+
+    function two(){
+        const website = 'Youtube'
+        console.log(userName);
+    }
+    //console.log(website);
+
+    two()
+}
+// one()
+
+if(true){
+    const username = "sai"
+    if(username === "sai"){
+        const web = " Youtube"
+        //console.log(username + web);
+    }
+    //console.log(web);
+}
+//console.log(username);
+
+
+//+++++++++++++++++++ interesting =++++++++++++++++++++
+console.log(addone(5))
+function addone(num){
+    return num + 1;
+}
+
+//hoisting
+//console.log(addTwo(5))
+const addTwo = function(num){
+    return num + 2
+}
+
