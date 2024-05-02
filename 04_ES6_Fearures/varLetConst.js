@@ -62,3 +62,38 @@ function getFood(food) {
 
 console.log(getFood(false)); // undefined
 
+//========================================================
+
+//work with some example
+// var -> function scope
+console.log();
+function getVar(){
+    for(var i=0; i<5; i++){
+        console.log(i);
+    }
+    console.log("i ="+ i);
+}
+
+getVar()
+console.log()
+
+// let -> block scope
+function getFor(){
+    for(let i=0; i<5; i++){
+        console.log(i);
+    }
+    //console.log("i ="+ i); // i is not defined
+}
+
+getFor()
+console.log();
+
+// const -> block scope
+const x = 10;
+
+function getConst(){
+    // x = 20;
+    console.log(x); //Assignment to constant variable. it cannot be changed
+}
+
+getConst()
